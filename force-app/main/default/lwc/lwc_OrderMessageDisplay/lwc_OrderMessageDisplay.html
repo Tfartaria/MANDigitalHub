@@ -1,0 +1,15 @@
+<!--
+  @File Name          : lwc_MessageDisplay.html
+  @Description        : LWC to add in the Order Page layout, to disply a error message
+  @Author             : taniaoliveirafartaria@gmail.com
+  Ver       Date            Author      		    Modification
+  1.0    25/05/2020   taniaoliveirafarariagmail.com     Initial Version
+-->
+<template >
+        <lightning-card if:true={message}>
+            <p id="message" class="slds-text-align_center slds-text-color_inverse" style="padding:0.5rem;background:#bd0707" >
+                <lightning-icon icon-name="utility:warning" alternative-text="Warning!" title="Warning" ></lightning-icon>
+                {message}
+            </p>
+        </lightning-card>
+</template>

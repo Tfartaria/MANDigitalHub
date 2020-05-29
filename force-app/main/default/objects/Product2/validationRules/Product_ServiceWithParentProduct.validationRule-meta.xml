@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_ServiceWithParentProduct</fullName>
+    <active>true</active>
+    <description>Ensure service products have parent product populated</description>
+    <errorConditionFormula>AND(  RecordType.DeveloperName = &#39;Service&#39;,  
+      ParentProduct__c = null)</errorConditionFormula>
+    <errorMessage>Please insert the parent product.</errorMessage>
+</ValidationRule>
